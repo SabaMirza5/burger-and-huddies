@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>burger and huddies</title>
+
+
+  
+
+
+
+  </head>
+  <body>
+   <!-- ===============================NAVBAR START HERE======================= -->
+    <!-- for laptop -->
+    <nav
+      class="flex justify-between lg:px-[5%] md:px-[3%] items-center pt-[30px] lg:flex hidden"
+    >
+      <div class="flex items-center gap-8">
+        <a href="./index.html" class="flex justify-center"
+          ><img
+            src="./asstes/imgs/nav_logo.png"
+            alt=""
+            class="lg:w-full md:w-[69%]"
+        /></a>
+        <a href=""><img src="./asstes/imgs/tiktok.png" alt="" /></a>
+        <a href=""><img src="./asstes/imgs/insta.png" alt="" /></a>
+      </div>
+      <div class="">
+        <ul
+          class="flex justify-center gap-8 Avenir font-normal text-lg text-[#3F3F3F] uppercase"
+        >
+          <li><a href="./our_story.html" class="font-semibold">Story</a></li>
+          <li><a href="./work.html">work</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact_us.html">Connect</a></li>
+          <li class="flex justify-center">
+            <img src="./asstes/imgs/search.png" alt="" />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- for mobile -->
+    <nav class="justify-between px-[5%] items-center pt-[20px] lg:hidden flex">
+      <a href="#">
+        <img src="./asstes/imgs/nav_logo.png" alt="Logo" class="w-[50%]" />
+      </a>
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="menu-button"
+          class="h-6 w-6 cursor-pointer lg:hidden block"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </div>
+    </nav>
+    <div id="menu" class="hidden flex-col items-center text-center w-full p-5">
+      <ul
+        class="flex flex-col gap-5 Avenir font-normal text-lg text-[#3F3F3F] uppercase"
+      >
+        <li><a href="./our_story.html" class="font-semibold">Story</a></li>
+        <li><a href="./work.html">work</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./contact_us.html">Connect</a></li>
+        <li class="flex justify-center">
+          <img src="./asstes/imgs/search.png" alt="" />
+        </li>
+      </ul>
+      <div class="flex justify-center gap-5 pt-5">
+        <a href=""><img src="./asstes/imgs/tiktok.png" alt="" /></a>
+        <a href=""><img src="./asstes/imgs/insta.png" alt="" /></a>
+      </div>
+    </div>
+    <!-- ===============================NAVBAR END HERE======================= -->
+
+
+
+
+
+
+
+
+<!-- =================================OUR STORY SECTION START HERE====================== -->
+<section class=" md:pt-[100px] pt-[50px] pb-[121px] ">
+<div class="swiper mySwiper px-[5%]">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="./asstes/imgs/slide1.png" alt=""></div>
+    <div class="swiper-slide"><img src="./asstes/imgs/slide1.png" alt=""></div>
+    <div class="swiper-slide"><img src="./asstes/imgs/slide1.png" alt=""></div>
+  
+    
+  </div>
+  <div class="swiper-button-next !text-[#3F3F3F] "></div>
+  <div class="swiper-button-prev !text-[#3F3F3F] "></div>
+  <div class="swiper-pagination  !text-[#3F3F3F]"></div>
+</div>
+
+
+<div class="flex justify-between px-[10%] pt-[60px] md:flex-row flex-col md:gap-0 gap-8">
+
+<div class="">
+  <h1 class="Krungthep uppercase font-normal 2xl:text-[40px] xl:text-[36px] lg:text-[24px] md:text-[23px] text-2xl text-[#3F3F3F]">Valentino</h1>
+  <p class="Avenir font-normal text-lg pt-[10px] text-[#666666]  uppercase">menswear campaign summer/spring 2021</p>
+</div>
+<div class="">
+
+
+
+
+
+
+  <h1 class="Krungthep uppercase font-normal text-[22px] text-[#3F3F3F]">Overview</h1>
+  <p class="Avenir font-normal text-sm pt-[10px] text-[#666666]  uppercase leading-4">The Valentino Men's Collection for the Summer/Spring season <br class="md:block hidden"> exemplifies a harmonious blend of classic elegance and contemporary <br class="md:block hidden"> fashion.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =================================OUR STORY SECTION END HERE====================== -->
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+    <!-- =====================SCRIPT FOR NAVBAR============ -->
+    <script>
+      document.getElementById("menu-button").addEventListener("click", () => {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("hidden");
+      });
+    </script>
+    <!-- =====================SCRIPT FOR NAVBAR============ -->
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+@font-face {
+  font-family: Krungthep;
+  src: url(../asstes/fonts/Krungthep.ttf);
+}
+.Krungthep{
+  font-family: Krungthep;
+}
+
+
+
+@font-face {
+  font-family: Avenir;
+  src: url(./asstes/fonts/Avenir.ttf);
+}
+.Avenir{
+  font-family: Avenir;
+}
+body{
+  background:#F4F3EE;
+}
+
+
+.swiper-pagination-bullet {
+ 
+  background: #F4F3EE !important;
+  opacity: 1 !important;
+  
+}
+
+.swiper-pagination-bullet-active {
+
+  background:#D44D2D !important;
+}
+
+
+@media only screen and (max-width: 425px) and (min-width: 320px)  {
+
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+ 
+    font-size: 18px !important;
+    padding-left: 29px !important;
+  }
+  .swiper-button-prev:after, .swiper-ltr .swiper-button-next:after {
+   
+    font-size: 18px !important;
+    padding-right: 29px !important;
+  }
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================STYLING FOR OUR STORY SECTON START HERE================ */
+
+/* =========================STYLING FOR OUR STORY SECTON END HERE================ */
+
+
+
+

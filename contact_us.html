@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>burger and huddies</title>
+  
+</head>
+<body>
+
+
+
+
+
+<!-- ===============================NAVBAR START HERE======================= -->
+    <!-- for laptop -->
+    <nav
+      class="flex justify-between lg:px-[5%] md:px-[3%] items-center pt-[30px] lg:flex hidden"
+    >
+      <div class="flex items-center gap-8">
+        <a href="./index.html" class="flex justify-center"
+          ><img
+            src="./asstes/imgs/nav_logo.png"
+            alt=""
+            class="lg:w-full md:w-[69%]"
+        /></a>
+        <a href=""><img src="./asstes/imgs/tiktok.png" alt="" /></a>
+        <a href=""><img src="./asstes/imgs/insta.png" alt="" /></a>
+      </div>
+      <div class="">
+        <ul
+          class="flex justify-center gap-8 Avenir font-normal text-lg text-[#3F3F3F] uppercase"
+        >
+          <li><a href="./our_story.html" class="font-semibold">Story</a></li>
+          <li><a href="./work.html">work</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./contact_us.html">Connect</a></li>
+          <li class="flex justify-center">
+            <img src="./asstes/imgs/search.png" alt="" />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- for mobile -->
+    <nav class="justify-between px-[5%] items-center pt-[20px] lg:hidden flex">
+      <a href="#">
+        <img src="./asstes/imgs/nav_logo.png" alt="Logo" class="w-[50%]" />
+      </a>
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="menu-button"
+          class="h-6 w-6 cursor-pointer lg:hidden block"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </div>
+    </nav>
+    <div id="menu" class="hidden flex-col items-center text-center w-full p-5">
+      <ul
+        class="flex flex-col gap-5 Avenir font-normal text-lg text-[#3F3F3F] uppercase"
+      >
+        <li><a href="./our_story.html" class="font-semibold">Story</a></li>
+        <li><a href="./work.html">work</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./contact_us.html">Connect</a></li>
+        <li class="flex justify-center">
+          <img src="./asstes/imgs/search.png" alt="" />
+        </li>
+      </ul>
+      <div class="flex justify-center gap-5 pt-5">
+        <a href=""><img src="./asstes/imgs/tiktok.png" alt="" /></a>
+        <a href=""><img src="./asstes/imgs/insta.png" alt="" /></a>
+      </div>
+    </div>
+    <!-- ===============================NAVBAR END HERE======================= -->
+  
+<!-- ====================HEADER SECTION START HERE============= -->
+ <section class="px-[5%] md:pt-[60px] pt-[30px]">
+  <div class="flex  justify-center items-center h-screen h-none flex-col">
+
+    <div class=" lg:w-[34%] md:w-[80%] w-full">
+      <form action="" class="space-y-4">
+        <input type="text" placeholder="name"  class="py-4 w-full bg-white text-[#3F3F3F] text-center rounded-lg font-normal text-base Avenir uppercase  focus:outline-none placeholder-[#3F3F3F]">
+        <input type="email" placeholder="email"  class="py-4 w-full bg-white text-[#3F3F3F] text-center rounded-lg font-normal text-base Avenir uppercase  focus:outline-none placeholder-[#3F3F3F]">
+        <textarea  name="message"    placeholder="message" required class="py-8 resize-none w-full bg-white text-[#3F3F3F] text-center rounded-lg font-normal text-base Avenir uppercase  focus:outline-none placeholder-[#3F3F3F] w-full"></textarea>
+        <div class="flex justify-center items-center"><button class="Krungthep  font-normal text-[28px]  text-[#3F3F3F] text-center  uppercase ">send</button></div>
+       
+      </form>
+      
+    </div>
+
+
+
+
+
+    
+    <div class=" xl:w-[80%] w-full my-[60px] ">
+     
+      <div class="flex md:flex-row flex-col justify-center lg:gap-[80px] md:gap-[45px] gap-5 md:text-start text-center">
+        <a href="" class="Avenir font-normal text-base text-[#3F3F3F] uppercase">info@burgersandhoodies.com</a>
+        <p class="Avenir font-normal text-base text-[#3F3F3F] uppercase">+9723456789</p>
+        <p class="Avenir font-normal text-base text-[#3F3F3F] uppercase">+Office 501, 5th FloorDubai, UAE P.O. Box 123456</p>
+        
+      </div>
+    </div>
+
+
+
+
+ 
+  </div>
+
+ </section>
+<!-- ====================HEADER SECTION END HERE============= -->
+
+<script>
+  document.getElementById('menu-button').addEventListener('click', () => {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
